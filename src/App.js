@@ -1,8 +1,9 @@
-import Calculator from "./Components/calculator/Calculator"
+import Calculator from "./components/Calculator";
 function App() {
-
   return (
-    <Calculator/>
+    <>
+      <Calculator />
+    </>
   );
 }
 
