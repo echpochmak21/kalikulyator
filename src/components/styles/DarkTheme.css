@@ -1,0 +1,20 @@
+/* DarkTheme.css */
+
+.dark-theme {
+    background-color: #333; /* Dark background color */
+    color: #fff; /* Light text color */
+  }
+  
+  .dark-theme .btn {
+    /* Adjust button styles for dark theme */
+    background-color: #555; /* Dark button background color */
+    color: #fff; /* Light button text color */
+  }
+  
+  .dark-theme .btn.clr {
+    background-color: #ff6347; /* Red color for clear button in dark theme */
+  }
+  
+  /* Add any additional styles for dark theme as needed */
+  .display  {background: linear-gradient(90deg, #000000, #ffffff 100%);
+  }
