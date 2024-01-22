@@ -1,0 +1,81 @@
+// Buttons.js
+
+import React from "react";
+import "./styles/Buttons.css";
+import "./styles/DarkTheme.css";
+
+const Buttons = ({ inputHandler, clearInput, backspace, changePlusMinus, calculateAns, isDarkTheme }) => {
+  return (
+    <div className={`show-btn ${isDarkTheme ? 'dark-theme' : ''}`}>
+      <button className="btn clr" onClick={clearInput}>
+        AC
+      </button>
+      <button className="btn clr" onClick={backspace}>
+        ⌫
+      </button>
+      <button className="btn exp" onClick={inputHandler}>
+        %
+      </button>
+      <button className="btn exp" onClick={inputHandler}>
+        ÷
+      </button>
+
+      <button className="btn" onClick={inputHandler}>
+        7
+      </button>
+      <button className="btn" onClick={inputHandler}>
+        8
+      </button>
+      <button className="btn" onClick={inputHandler}>
+        9
+      </button>
+      <button className="btn exp" onClick={inputHandler}>
+        x
+      </button>
+
+      <button className="btn" onClick={inputHandler}>
+        4
+      </button>
+      <button className="btn" onClick={inputHandler}>
+        5
+      </button>
+      <button className="btn" onClick={inputHandler}>
+        6
+      </button>
+      <button className="btn exp" onClick={inputHandler}>
+        -
+      </button>
+
+      <button className="btn" onClick={inputHandler}>
+        1
+      </button>
+      <button className="btn" onClick={inputHandler}>
+        2
+      </button>
+      <button className="btn" onClick={inputHandler}>
+        3
+      </button>
+      <button className="btn exp" onClick={inputHandler}>
+        +
+      </button>
+
+      <button className="btn" onClick={changePlusMinus}>
+        ±
+      </button>
+      <button className="btn zero" onClick={inputHandler}>
+        0
+      </button>
+      <button className="btn exp" onClick={inputHandler}>
+        .
+      </button>
+      <button className={`btn toggle-theme ${isDarkTheme ? 'dark-theme' : ''}`} onClick={toggleTheme}>
+        Toggle Theme
+      </button>
+      <button className="btn exp equal" id="equalbtn" onClick={calculateAns}>
+        =
+      </button>
+    </div>
+  );
+};
+
+export default Buttons;
